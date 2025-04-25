@@ -1,9 +1,9 @@
 # QLVDT
-# 📌 Giới thiệu dự án
+# Giới thiệu dự án
 Đây là hệ thống quản lý ví điểm thưởng, hỗ trợ đăng nhập/đăng ký, phân quyền người dùng, xác thực OTP qua hệ thống mail giả lập.
-# 👨‍💻 Thành viên tham gia dự án
+# Thành viên tham gia dự án
 K24DTCN249 - Mạc Quang Vinh : One For All :)
-# 🛠 Phân tích và mô tả chức năng
+# Phân tích và mô tả chức năng
 - Chương trình chính (app.exe)  
 Đăng ký tài khoản.  
 Đăng nhập và phân quyền người dùng / quản lý.  
@@ -15,7 +15,7 @@ Lưu trữ và backup dữ liệu
 Đăng kí , đăng nhập tài khoản mail ( mail phải có định dạng @gmail.com)  
 Gửi thư  
 Xem hôp thư đến  
-# 🛠 Phân tích và mô tả chức năng theo phân quyền người dùng
+# Phân tích và mô tả chức năng theo phân quyền người dùng
 1.User  
 Xem thông tin số dư  
 Thay đổi mật khẩu   
