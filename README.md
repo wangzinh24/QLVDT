@@ -12,7 +12,7 @@ Quản lý ví điểm và lịch sử giao dịch.
 OTP(One Time Password) được tích hợp khi chuyển đổi điểm và người dùng thay đổi thông tin cá nhân qua chương trình mail giả lập.(**bắt buộc phải tạo và sử dụng mail tạo qua chương trình mail giả lập để nhận OTP(nên tạo mail qua chương trình mail giả lập trước khi đăng kí )**)  
 Lưu trữ và backup dữ liệu  
 - Chương trình phụ ( mail.exe - dùng để nhận mã OTP)  
-Đăng kí , đăng nhập tài khoản mail ( mail phải có định dạng @gmail.com)  
+Đăng kí , đăng nhập tài khoản mail ( mail phải có định dạng user@gmail.com)  
 Gửi thư  
 Xem hôp thư đến  
 # Phân tích và mô tả chức năng theo phân quyền người dùng
