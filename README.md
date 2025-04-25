@@ -16,18 +16,18 @@ Lưu trữ và backup dữ liệu
 Gửi thư  
 Xem hôp thư đến  
 # 🛠 Phân tích và mô tả chức năng theo phân quyền người dùng
-1.User
-Xem thông tin số dư
-Thay đổi mật khẩu 
-Thay đổi thông tin cá nhân
-Chuyển điểm
-Xem lịch sử chuyển đổi điểm 
-Xem thông tin cá nhân của mình
-2.Admin
-Có tất cả chức năng của và :
-Tạo tài khoản cho user
-Đặt lại mật khẩu cho user
-Tìm thông tin user
-Xem tất cả user có trong hệ thống
+1.User  
+Xem thông tin số dư  
+Thay đổi mật khẩu   
+Thay đổi thông tin cá nhân  
+Chuyển điểm  
+Xem lịch sử chuyển đổi điểm  
+Xem thông tin cá nhân của mình  
+2.Admin  
+Có tất cả chức năng của và :  
+Tạo tài khoản cho user  
+Đặt lại mật khẩu cho user  
+Tìm thông tin user  
+Xem tất cả user có trong hệ thống  
 # Hướng dẫn sử dụng
-Chương trình đã biên dịch ra 2 file : app.exe và mail.exe có thể dùng được luôn hoặc có thể tự biên dịch chương trình : con trỏ vào thư mục chứa chương trình và dùng lệnh : g++ main.cpp user.cpp wallet.cpp send_internal_mail.cpp utils.cpp -o app.exe để dịch chương trình chính(app.exe) và : g++ main.cpp -o mail.exe để dịch chương trình phụ(mail.exe)
+Chương trình đã biên dịch ra 2 file : app.exe và mail.exe có thể dùng được luôn hoặc có thể tự biên dịch chương trình : con trỏ vào thư mục chứa chương trình và dùng lệnh : g++ main.cpp user.cpp wallet.cpp send_internal_mail.cpp utils.cpp -o app.exe để dịch chương trình chính(app.exe) và : g++ main.cpp -o mail.exe để dịch chương trình phụ(mail.exe) ( sử dụng phiên bản g++ 14.2.0 để biên dịch)
