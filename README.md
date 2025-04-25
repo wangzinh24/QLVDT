@@ -4,17 +4,17 @@
 # 👨‍💻 Thành viên tham gia dự án
 K24DTCN249 - Mạc Quang Vinh : One For All :)
 # 🛠 Phân tích và mô tả chức năng
-- Chương trình chính (app.exe)
-Đăng ký tài khoản.
-Đăng nhập và phân quyền người dùng / quản lý.
-Chuyển điểm giữa các tài khoản.
-Quản lý ví điểm và lịch sử giao dịch.
-OTP(One Time Password) được tích hợp khi chuyển đổi điểm và người dùng thay đổi thông tin cá nhân qua chương trình mail giả lập.(**bắt buộc phải tạo và sử dụng mail tạo qua chương trình mail giả lập để nhận OTP(nên tạo mail qua chương trình mail giả lập trước khi đăng kí )**)
-Lưu trữ và backup dữ liệu
-- Chương trình phụ ( mail.exe - dùng để nhận mã OTP)
-Đăng kí , đăng nhập tài khoản mail ( mail phải có định dạng @gmail.com)
-Gửi thư
-Xem hôp thư đến
+- Chương trình chính (app.exe)  
+Đăng ký tài khoản.  
+Đăng nhập và phân quyền người dùng / quản lý.  
+Chuyển điểm giữa các tài khoản.  
+Quản lý ví điểm và lịch sử giao dịch.  
+OTP(One Time Password) được tích hợp khi chuyển đổi điểm và người dùng thay đổi thông tin cá nhân qua chương trình mail giả lập.(**bắt buộc phải tạo và sử dụng mail tạo qua chương trình mail giả lập để nhận OTP(nên tạo mail qua chương trình mail giả lập trước khi đăng kí )**)  
+Lưu trữ và backup dữ liệu  
+- Chương trình phụ ( mail.exe - dùng để nhận mã OTP)  
+Đăng kí , đăng nhập tài khoản mail ( mail phải có định dạng @gmail.com)  
+Gửi thư  
+Xem hôp thư đến  
 # 🛠 Phân tích và mô tả chức năng theo phân quyền người dùng
 1.User
 Xem thông tin số dư
