@@ -1,6 +1,6 @@
 # QLVDT
 # 📌 Giới thiệu dự án
-Đây là hệ thống quản lý ví điểm thưởng, hỗ trợ đăng nhập/đăng ký, phân quyền người dùng, xác thực OTP nội bộ qua hệ thống mail giả lập.
+Đây là hệ thống quản lý ví điểm thưởng, hỗ trợ đăng nhập/đăng ký, phân quyền người dùng, xác thực OTP qua hệ thống mail giả lập.
 # 👨‍💻 Thành viên tham gia dự án
 K24DTCN249 - Mạc Quang Vinh : One For All :)
 # 🛠 Phân tích và mô tả chức năng
