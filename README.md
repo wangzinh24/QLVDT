@@ -24,7 +24,7 @@ Chuyển điểm
 Xem lịch sử chuyển đổi điểm  
 Xem thông tin cá nhân của mình  
 2.Admin  
-Có tất cả chức năng của và :  
+Có tất cả chức năng của user và :  
 Tạo tài khoản cho user  
 Đặt lại mật khẩu cho user  
 Tìm thông tin user  
