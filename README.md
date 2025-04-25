@@ -31,3 +31,5 @@ Tìm thông tin user
 Xem tất cả user có trong hệ thống  
 # Hướng dẫn sử dụng
 Chương trình đã biên dịch ra 2 file : app.exe và mail.exe có thể dùng được luôn hoặc có thể tự biên dịch chương trình : con trỏ vào thư mục chứa chương trình và dùng lệnh : g++ main.cpp user.cpp wallet.cpp send_internal_mail.cpp utils.cpp -o app.exe để dịch chương trình chính(app.exe) và : g++ main.cpp -o mail.exe để dịch chương trình phụ(mail.exe) ( sử dụng phiên bản g++ 14.2.0 để biên dịch)
+# Cơ chế Backups
+Khi phát sinh giao dịch chương trình sẽ ghi lại file chứa thông tin user và lịch sử chuyển đổi điểm sang thư mục backups(nếu chưa có thì chương trình sẽ tự tạo thư mục) và chỉ giữ lại 2 version files gần nhất để tiết kiệm tài nguyên.
