@@ -14,6 +14,7 @@ namespace fs = std::filesystem;
 
 const string CREDENTIAL_FILE = "user.txt";
 const string MAILBOX_FOLDER = "mail_box/";
+// Hàm in banner
 void showBanner() {
         string rainbow[] = {
             "\033[91m", // đỏ
@@ -41,6 +42,9 @@ void showBanner() {
             cout << reset << "\n";
         }
     }
+// Hàm băm chuỗi thành SHA256
+// Input: chuỗi cần mã hóa
+// Output: chuỗi mã hóa dạng hex
 string sha256(const string& str) {
     unsigned char hash[SHA256_DIGEST_LENGTH];
     SHA256((unsigned char*)str.c_str(), str.size(), hash);
@@ -50,12 +54,12 @@ string sha256(const string& str) {
     }
     return ss.str();
 }
-
+// Hàm kiểm tra định dạng email (phải là gmail.com)
 bool isValidGmail(const string& email) {
     regex pattern(R"(^[\w.+-]+@gmail\.com$)");
     return regex_match(email, pattern);
 }
-
+// Hàm kiểm tra tài khoản đã tồn tại trong file user.txt chưa
 bool usernameExists(const string& username) {
     ifstream inFile(CREDENTIAL_FILE);
     string line;
@@ -66,7 +70,9 @@ bool usernameExists(const string& username) {
     }
     return false;
 }
-
+// Hàm đăng ký tài khoản mới
+// Input: username (gmail), password
+// Output: true nếu thành công, false nếu thất bại
 bool registerUser(const string& username, const string& password) {
     if (!isValidGmail(username)) {
         cout << "Email must be in format 'example@gmail.com'.\n";
@@ -88,7 +94,9 @@ bool registerUser(const string& username, const string& password) {
     cout << "Registration successful.\n";
     return true;
 }
-
+// Hàm xác thực đăng nhập
+// Input: username, password
+// Output: true nếu đúng, false nếu sai
 bool authenticateUser(const string& username, const string& password) {
     ifstream inFile(CREDENTIAL_FILE);
     string line, storedUser, storedHash;
@@ -102,7 +110,7 @@ bool authenticateUser(const string& username, const string& password) {
     }
     return false;
 }
-
+// Hàm lấy thời gian hiện tại dưới dạng chuỗi
 string getCurrentTime() {
     time_t now = time(0);
     tm* ltm = localtime(&now);
@@ -115,7 +123,7 @@ string getCurrentTime() {
        << setfill('0') << setw(2) << ltm->tm_sec;
     return ss.str();
 }
-
+// Hàm hiển thị hộp thư đến của người dùng
 void viewInbox(const string& username) {
     string path = MAILBOX_FOLDER + username + ".txt";
     ifstream file(path);
@@ -129,7 +137,8 @@ void viewInbox(const string& username) {
         cout << line << "\n";
     }
 }
-
+// Hàm gửi mail cho người dùng khác
+// Người dùng nhập recipient (người nhận) và nội dung tin nhắn
 void sendMail(const string& sender) {
     string recipient, message;
     cout << "Send to: ";
@@ -155,7 +164,7 @@ void sendMail(const string& sender) {
     inbox << "Message: " << message << "\n\n";
     cout << "Message sent.\n";
 }
-
+// Hàm quản lý phiên làm việc của người dùng trong hộp thư
 void mailboxSession(const string& username) {
     int choice;
     do {
