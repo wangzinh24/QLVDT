@@ -31,7 +31,7 @@ Tìm thông tin user
 Xem tất cả user có trong hệ thống  
 # Hướng dẫn sử dụng
 Chương trình đã biên dịch ra 2 file : app.exe và mail.exe có thể dùng được luôn hoặc có thể tự biên dịch chương trình : con trỏ vào thư mục chứa chương trình và dùng lệnh : g++ main.cpp user.cpp wallet.cpp send_internal_mail.cpp utils.cpp -o app.exe để dịch chương trình chính(app.exe) và : g++ main.cpp -o mail.exe để dịch chương trình phụ(mail.exe) ( sử dụng phiên bản g++ 14.2.0 để biên dịch)<br>
-Sử dụng OTP :
+Sử dụng OTP :<br>
 Bước 1 : Tạo email ở chương trình mail.exe với định dạng user@gmail.com<br>
 Bước 2 : Tạo account với email đã tạo<br>
 Bước 3 : Thực hiện giao dịch chuyển điểm khi hệ thông yêu cầu OTP quay lại lấy mã OTP ở hộp thư đến của chương trình mail.exe<br>
